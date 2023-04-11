@@ -31,12 +31,20 @@ img[alt~="center"] {
 
 ## Tags HTML
 
+- São as **marcações** utilizadas na construção de páginas Web
 - Estão inseridas entre os sinais `<` e `>`
 - São divididas em tags de abertura e de fechamento. As de fechamento possuem uma `/` logo após o sinal de `<`
     - Exemplo: `<h1>` (tag de abertura) e `</h1>` (tag de fechamento)
-- Nem todas as tags possuem tag de fechamento
+- Nem todas as tags possuem tag de fechamento (self-closing)
     - Exemplos: `<br>`, `<hr>`, `<img>`, etc.
-- As tags são *case insensitive*, mas dê preferência para escrever em minúsculo
+
+---
+
+## Tags HTML
+
+- Podem apresentar atributos nas tags de abertura
+  - Os atributos são no formato `nome="valor"`
+    - Exemplo: `<img src="flor.jpg" alt="Imagem de uma flor">`
 
 ---
 
@@ -90,15 +98,168 @@ img[alt~="center"] {
   - Exemplos:
     `<h1>`Título 1`</h1>`
     ...
-    `<h6>`Título 2`</h6>`
+    `<h6>`Título 6`</h6>`
   ![bg right:40% w:50%](imagens/titulos.png)
 
 ---
 
 ## Principais Tags do HTML
 
+- `<em>`...`</em>`
+  - Indica ênfase ou estresse ao texto
+  - Exemplo: Anim in exercitation *Lorem occaecat* incididunt ipsum
+- `<strong>`...`</strong>`
+  - Indica importância ao texto
+  - Exemplo: Anim in exercitation **Lorem occaecat** incididunt ipsum
+
+---
+
+## Principais Tags do HTML
+
+- `<mark>`...`</mark>`
+  - Indica relevância ao texto
+  - Exemplo: ![width:20cm](imagens/mark.png)
+- `<cite>`...`</cite>`
+  - Cita o nome de um trabalho, tal como um livro, jogo ou música
+  - Exemplo: Anim in exercitation *Lorem occaecat* incididunt ipsum
+
+---
+
+## Principais Tags do HTML
+
+- `<dfn>`...`</dfn>`
+  - Marca a instância de definição de um termo
+  - Exemplo: Anim in exercitation *Lorem occaecat* incididunt ipsum
+- `<em>`, `<cite>` e `<dfn>` parecem visualmente iguais, mas são *semanticamente* (significados) diferentes e podem assumir diferentes estilos
+
+---
+
+## Principais Tags do HTML
+
 - `<p>`...`</p>`
-  - Representa um parágrafo. Em HTML, parágrafos são usados para agrupar conteúdos relacionados de qualquer tipo
+  - Representa um parágrafo. São usados para agrupar conteúdos relacionados de qualquer tipo
+  - Exemplo:
+    ```html
+    <p>Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.
+    Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.</p>
+
+    <p>Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.
+    Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.</p>
+    ```
+
+---
+
+## Principais Tags do HTML
+
+![width:30cm](imagens/p.png)
+
+---
+
+## Principais Tags do HTML
+
+- `<a>`...`</a>`
+  - Cria uma hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL
+  - Exemplo:
+    `<a href="https://www.ifpe.edu.br">IFPE</a>`
+    [IFPE](https://www.ifpe.edu.br)
+    `<a href="mailto:fabricio.cabral@ead.ifpe.edu.br">Email</a>`
+    [Email](mailto:fabricio.cabral@ead.ifpe.edu.br)
+    `<a href="tel:+123456789">Fone</a>`
+    [Fone](tel:+123456789)
+
+---
+
+## Principais Tags do HTML
+
+- `<img>`
+  - Representa a inserção de imagem no documento HTML
+  - Exemplo: `<img src="flor.jpg" alt="Uma flor">`
+
+     ![width:10cm](imagens/flor.jpg)
+
+---
+
+## Principais Tags do HTML
+
+- `<ul>`...`</ul>`
+- Representa uma lista em que uma ordenação numérica e as suas posições são irrelevantes (desordenada)
+- São exibidos com um marcador que pode ter várias formas, como um ponto, um círculo ou um quadrado
+- O atributo `type` modifica o tipo de marcador (ou pode-se usar CSS)
+  - `point` indica um ponto (padrão)
+  - `circle` indica um círculo
+  - `square` indica um quadrado
+
+---
+
+## Principais Tags do HTML
+
+- Exemplo:
+  ```html
+  <ul>
+    <li>Laranja</li>
+    <li>Banana</li>
+    <li>Uva</li>
+  </ul>
+  ```
+- Laranja
+- Banana
+- Uva
+
+---
+
+## Principais Tags do HTML
+
+- `<li>`...`</li>`
+- Representa um item que faz parte de uma lista
+- Deve estar contido em um elemento pai: uma lista ordenada (`<ol>`), uma lista desordenada (`<ul>`) , ou um menu (`<menu>`) e representa uma única entidade dessa lista
+
+---
+
+## Principais Tags do HTML
+
+- `<ol>`...`</ol>`
+  - Representa uma lista de itens ordenados
+  - O atributo `type` indica o tipo de numeração:
+    - `a` indica letras minúsculas
+    - `A` indica letras maiúsculas
+    - `i` indica algarismos romanos minúsculos
+    - `I` indica algarismos romanos maiúsculos
+    - `1` indica números (padrão)
+
+---
+
+## Principais Tags do HTML
+
+- Exemplo:
+  ```html
+  <ol>
+    <li>Um</li>
+    <li>Dois</li>
+    <li>Três</li>
+  </ol>
+  ```
+
+  1. Um
+  2. Dois
+  3. Três
+
+---
+
+## Principais Tags do HTML
+
+- `<b>`...`</b>`
+  - Representa um intervalo de texto estilísticamente diferente do texto normal, sem transmitir qualquer importância ou relevância
+  - Geralmente é usado para destacar palavras-chaves em um resumo, nomes de produtos em um comentário ou outros vãos de texto cuja a apresentação típica seria negrito
+  - Exemplo: Anim in exercitation **Lorem occaecat** incididunt ipsum
+
+---
+
+## Principais Tags do HTML
+
+- `<i>`...`</i>`
+  - Representa uma parte do texto que é destacada do restante por algum motivo, por exemplo, termos técnicos, expressões de outros idiomas ou pensamentos de personagens fictícios
+  - É apresentado com o uso do tipo "itálico"
+  - Exemplo: Anim in exercitation *Lorem occaecat* incididunt ipsum
 
 ---
 
@@ -106,10 +267,24 @@ img[alt~="center"] {
 
 - `<hr>`
   - Representa uma quebra temática entre elementos de nível de parágrafo (por exemplo , uma mudança da cena de uma história, ou uma mudança de tema com uma seção). Nas versões anteriores do HTML, representava uma linha horizontal. Pode continuar sendo exibida como uma linha horizontal nos navegadores, mas agora está definida em termos semânticos, em vez de termos de apresentação
+  - Exemplo: ![width:20cm](imagens/hr.png)
 
 ---
 
-## Template Básico de uma Página
+## Comentários HTML
+
+- `<!-- Isto é um comentário de uma linha -->`
+- ```html
+  <!--
+    Isto é um comentário
+    de mais de uma
+    linha
+  -->
+  ```
+
+---
+
+## Template Básico de uma Página (Emmet)
 
 ```html
 <!DOCTYPE html>
@@ -121,15 +296,44 @@ img[alt~="center"] {
     <title>Título da Página</title>
 </head>
 <body>
-    <header>...</header>
-    <main>...</main>
-    <footer>...</footer>
 </body>
 </html>
 ```
 
 ---
 
+## Charset
+
+- Especifica a codificação dos caracteres de um documento HTML
+- Permite que o navegador interprete a acentuação dos documentos corretamente
+- O padrão HTML5 recomenda a utilização do conjunto de caracteres `UTF-8`, que cobre quase todos os caracteres e símbolos do mundo
+- `<meta charset="UTF-8">`
+
+---
+
+## Internet Explorer
+
+- `<meta http-equiv="X-UA-Compatible" content="IE=edge">`
+- Esta `<meta>` é exclusiva para Internet Explorer (introduzido no IE8), e configura a página para ser renderizada como em outra versão do Internet Explorer
+- O *quirks mode* faz o site ser interpretado como uma versão mais antiga do IE, o que pode fazer o site falhar, então ao ao usar `X-UA-Compatible` com o valor `IE=edge` ele vai forçar o navegador renderizar com a mais recente
+
+---
+
+## Viewport
+
+- É a área visível do usuário de uma página web. Varia com o tipo de dispositivo: será menor em um celular do que em uma tela de computador
+- Dá ao navegador instruções de como controlar as dimensões e o dimensionamento da página
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+  - `width=device-width` configura a largura da página para seguir a largura da tela do dispositivo
+  - `initial-scale=1.0` configura o nível de zoom inicial
+
+---
+
+## Viewport
+
+![width:7.5cm](imagens/sem-viewport.png) ![width:7.5cm](imagens/com-viewport.png)
+
+---
 
 ## Referências Bibliográficas
 
@@ -160,4 +364,28 @@ img[alt~="center"] {
 - MDN Web Docs, "Quirks Mode e Standards Mode", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Quirks_Mode_and_Standards_Mode, acessado em 05/04/2023
 - MDN Web Docs, "<meta>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta, acessado em 05/04/2023
 - MDN Web Docs, "<p>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p, acessado em 05/04/2023
+
+---
+
+## Referências Bibliográficas
+
+- MDN Web Docs, "<i>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/i, acessado em 05/04/2023
+- MDN Web Docs, "<b>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/b, acessado em 05/04/2023
+- W3Schools, "HTML Style Guide", https://www.w3schools.com/html/html5_syntax.asp, acessado em 05/04/2023
+
+---
+
+## Referências Bibliográficas
+
+- MDN Web Docs, "<a>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a, acessado em 05/04/2023
+- W3Schools, "HTML <meta> charset Attribute", https://www.w3schools.com/tags/att_meta_charset.asp, acessado em 05/04/2023
+- StackOverflow, "Qual é a função da meta tag "X-UA-Compatible" dentro do HTML?", https://pt.stackoverflow.com/questions/209593/qual-%c3%a9-a-fun%c3%a7%c3%a3o-da-meta-tag-x-ua-compatible-dentro-do-html, acessado em 05/04/2023
+
+---
+
+## Referências Bibliográficas
+
+- MDN Web Docs, "<ul>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul, acessado em 05/04/2023
+- MDN Web Docs, "<ol>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol, acessado em 05/04/2023
+- MDN Web Docs, "<li>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li, acessado em 05/04/2023
 
