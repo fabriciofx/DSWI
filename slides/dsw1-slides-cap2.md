@@ -331,7 +331,7 @@ img[alt~="center"] {
 
 ## Viewport
 
-![width:7.5cm](imagens/sem-viewport.png) ![width:7.5cm](imagens/com-viewport.png)
+![center width:18cm](imagens/viewport.png)
 
 ---
 
