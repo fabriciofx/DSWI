@@ -335,6 +335,70 @@ img[alt~="center"] {
 
 ---
 
+## Principais Tags do HTML
+
+- `<table>`...`</table>`
+  - Define uma tabela
+- `<th>`...`</th>`
+  - Define uma célula cabeçalho em uma tabela
+- `<tr>`...`</tr>`
+  - Define uma linha em uma tabela
+- `<td>`...`</td>`
+  - Define uma célula em uma tabela
+
+---
+
+## Principais Tags do HTML
+
+- `<caption>`...`</caption>`
+  - Define uma legenda para uma tabela
+- `<colgroup>`...`</colgroup>`
+  - Especifica um grupo de uma ou mais colunas em uma tabela para formatação
+- `<col>`...`</col>`
+  - Especifica propriedades de coluna para cada coluna dentro de um elemento `<colgroup>`
+
+---
+
+## Principais Tags do HTML
+
+- `<thead>`...`</thead>`
+  - Agrupa o conteúdo do cabeçalho em uma tabela
+- `<tbody>`...`</tbody>`
+  - Agrupa o conteúdo do corpo em uma tabela
+- `<tfoot>`...`</tfoot>`
+  - Agrupa o conteúdo do rodapé em uma tabela
+
+---
+
+## Principais Tags do HTML
+
+```html
+<table border="1">
+  <thead>
+    <tr>
+      <th>Fruta</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Laranja</td>
+    <td>R$ 0,50</td>
+  </tr>
+  <tr>
+    <td>Banana</td>
+    <td>R$ 0,60</td>
+  </tr>
+</table>
+```
+
+---
+
+## Principais Tags do HTML
+
+![center width:15cm](imagens/table.png)
+
+---
+
 ## Referências Bibliográficas
 
 - MDN Web Docs, "Elementos HTML", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element, acessado em 05/04/2023
@@ -389,3 +453,16 @@ img[alt~="center"] {
 - MDN Web Docs, "<ol>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol, acessado em 05/04/2023
 - MDN Web Docs, "<li>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li, acessado em 05/04/2023
 
+---
+
+## Referências Bibliográficas
+
+- MDN Web Docs, "<table>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table, acessado em 11/04/2023
+- MDN Web Docs, "<tr>", https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr, acessado em 11/04/2023
+- MDN Web Docs, "<td>", https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td, acessado em 11/04/2023
+
+---
+
+## Referências Bibliográficas
+
+ - W3Schools, "HTML Tables", https://www.w3schools.com/html/html_tables.asp, acessado em 11/04/2023
