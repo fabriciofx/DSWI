@@ -351,7 +351,7 @@ img[alt~="center"] {
 ## Principais Tags do HTML
 
 - `<caption>`...`</caption>`
-  - Define uma legenda para uma tabela
+  - Define uma legenda (ou título) para uma tabela
 - `<colgroup>`...`</colgroup>`
   - Especifica um grupo de uma ou mais colunas em uma tabela para formatação
 - `<col>`...`</col>`
@@ -396,6 +396,52 @@ img[alt~="center"] {
 ## Principais Tags do HTML
 
 ![center width:15cm](imagens/table.png)
+
+---
+
+## Principais Tags do HTML
+
+- É possível também expandir uma coluna ou linha utilizando, respectivamente, os atributos `colspan` e `rowspan`
+- Exemplo (baseado no anterior):
+  ```html
+  <table border="1">
+    <thead>
+      <tr>
+        <th colspan="2">Frutas</th>
+      </tr>
+    </thead>
+    ...
+  </table>
+  ```
+
+---
+
+## Principais Tags do HTML
+
+![center width:15cm](imagens/table-2.png)
+
+---
+
+## Principais Tags do HTML
+
+```html
+<table border="1">
+  ...
+  <tr>
+    <td>Laranja</td>
+    <td rowspan="2">R$ 0,50</td>
+  </tr>
+  <tr>
+    <td>Banana</td>
+  </tr>
+</table>
+```
+
+---
+
+## Principais Tags do HTML
+
+![center width:15cm](imagens/table-3.png)
 
 ---
 
@@ -466,3 +512,4 @@ img[alt~="center"] {
 ## Referências Bibliográficas
 
  - W3Schools, "HTML Tables", https://www.w3schools.com/html/html_tables.asp, acessado em 11/04/2023
+ - W3Schools, "HTML Table Colspan & Rowspan", https://www.w3schools.com/html/html_table_colspan_rowspan.asp, acessado em 11/04/2023
