@@ -337,6 +337,80 @@ img[alt~="center"] {
 
 ## Principais Tags do HTML
 
+- `<link>`
+  - Define um relacionamento entre o documento atual e um recurso externo
+  - É mais usado para vincular as folhas de estilo (CSS) externo
+  - É utilizado também para adicionar um *favicon*
+  - Exemplo:
+    ```html
+    <head>
+      <link rel="stylesheet" href="estilos.css">
+    </head>
+    ```
+
+---
+
+## Favicon
+
+- É uma pequena imagem exibida próximo ao título da página na aba do browser
+- Como é uma pequena imagem, deve ser simples e com alto contraste
+- Existem vários sites que ajudam a criar, como o [favicon.io](https://favicon.io/)
+- Exemplo:
+  ```html
+  <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  ```
+
+---
+
+## Principais Tags do HTML
+
+- `<div>`...`</div>`
+  - Define uma divisão ou uma seção em um documento HTML
+  - É usado como contêiner para elementos HTML, que podem ser estilizados com CSS ou manipulados com JavaScript
+  - Deve ser utilizado quando não tiver outro elemento de semântica, como `<article>` ou `<nav>`
+
+---
+
+## Principais Tags do HTML
+
+- Exemplo:
+
+    ```html
+    <body>
+    <div class="destacado">
+      <h2>This is a heading in a div element</h2>
+      <p>This is some text in a div element.</p>
+    </div>
+    </body>
+    ```
+
+---
+
+## Principais Tags do HTML
+
+- `<span>`...`</span>`
+  - Define um contêiner inline para marcar parte de um texto ou de um documento
+  - Pode ser estilizado com CSS ou manipulado com JavaScript usando o atributo `class` ou `id`
+  - É muito parecido com a tag `<div>`, mas `<div>` é um elemento de bloco enquanto `<span>` é um elemento inline
+
+---
+
+## Principais Tags do HTML
+
+  - Exemplo:
+    ```html
+    <body>
+      <p>Meu carro é <span style="color:blue">azul</span> e o
+      seu é <span style="color:red">vermelho</span>.</p>
+    </body>
+    ```
+
+---
+
+## Principais Tags do HTML
+
 - `<table>`...`</table>`
   - Define uma tabela
 - `<th>`...`</th>`
@@ -389,6 +463,7 @@ img[alt~="center"] {
     <td>R$ 0,60</td>
   </tr>
 </table>
+
 ```
 
 ---
@@ -513,3 +588,21 @@ img[alt~="center"] {
 
  - W3Schools, "HTML Tables", https://www.w3schools.com/html/html_tables.asp, acessado em 11/04/2023
  - W3Schools, "HTML Table Colspan & Rowspan", https://www.w3schools.com/html/html_table_colspan_rowspan.asp, acessado em 11/04/2023
+ - W3Schools, "HTML <link> Tag", https://www.w3schools.com/tags/tag_link.asp, acessado em 11/04/2023
+
+---
+
+## Referências Bibliográficas
+
+- W3Schools, "HTML Favicon", https://www.w3schools.com/html/html_favicon.asp, acessado em 11/04/2023
+- favicon.io, "favicon.io", https://favicon.io, acessado em 11/04/2023
+- W3Schools, "HTML <div> Tag", https://www.w3schools.com/tags/tag_div.asp, acessado em 11/04/2023
+
+---
+
+## Referências Bibliográficas
+
+- MDN Web Docs, "<div>", https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div, acessado em 11/04/2023
+- W3Schools, "HTML <span> Tag", https://www.w3schools.com/tags/tag_span.asp, acessado em 11/04/2023
+
+
