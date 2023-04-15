@@ -16,7 +16,7 @@ img[alt~="center"] {
 <!-- _paginate: false -->
 # **Desenvolvimento de Sistemas para a Web I**
 
-## Capítulo 4 - Cascading Style Sheet (CSS)
+## Capítulo 5 - Cascading Style Sheet (CSS)
 
 ---
 
