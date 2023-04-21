@@ -1,13 +1,16 @@
 const express = require('express');
 const body_parser = require('body-parser');
 
-const app = express();
 const port = process.env.PORT || 8080;
+
+const app = express();
 app.use(body_parser.urlencoded({extended: false }));
 
-// Ao requisitar com o verbo GET com path '/', envie a página 'login.html'
-app.get('/', function(req, res) {
-    res.sendFile('login.html', { root: __dirname });
+// Ao requisitar com o verbo GET com path '/filename', envie a página
+// 'filename'.
+app.get('/:filename', function(req, res) {
+    const filename = req.params.filename;
+    res.sendFile(filename, { root: __dirname });
 });
 
 // Ao requisitar com o verbo GET com path '/login', mostre o conteúdo dos
