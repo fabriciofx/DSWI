@@ -140,7 +140,13 @@ img[alt~="center"] {
 ## Tipos de Input
 
 - `<input type="radio">`
-  - Define um botão de rádio. O usuário só pode selecionar uma opcão entre um número limitado de escolhas
+  - Define um botão de rádio
+  - O usuário só pode selecionar uma opcão entre um número limitado de escolhas
+  - O valor do atributo `name` precisa ser igual para todos
+
+---
+
+## Tipos de Input
   - Exemplo:
     ```html
     <p>Escolha a sua linguagem de programação favorita:</p>
@@ -313,6 +319,49 @@ img[alt~="center"] {
 
 ---
 
+## Select
+
+- Define uma lista de elementos no formato de um combobox
+- Exemplo:
+  ```html
+  <label for="linguagens">Escolha uma linguagem:</label>
+  <select id="linguagens" name="linguagens">
+    <option value="java">Java</option>
+    <option value="python">Python</option>
+    <option value="javascript">JavaScript</option>
+  </select>
+  ```
+
+---
+
+## Datalist
+
+- Especifica uma lista pré-definida de opções a um elemento do tipo `input`
+- O atributo `list` do elemento `input` deve se referir ao atributo `id` do elemento `datalist`
+- Exemplo:
+  ```html
+  <input list="linguagens">
+  <datalist id="linguagens">
+    <option value="Java">
+    <option value="Python">
+    <option value="JavaScript">
+  </datalist>
+  ```
+
+---
+
+## Textarea
+
+- Define um campo de entrada de múltiplas linhas (uma área de texto)
+- Exemplo:
+  ```html
+  <textarea name="mensagem" rows="10" cols="50">
+    Escreva aqui a sua mensagem.
+  </textarea>
+  ```
+
+---
+
 ## Referências Bibliográficas
 
 - W3Schools, "HTML Forms", https://www.w3schools.com/html/html_forms.asp, acessado em 19/04/2023
@@ -326,3 +375,9 @@ img[alt~="center"] {
 - StackOverflow, "What is the maximum length of a URL in different browsers?", https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers, acessado em 19/04/2023
 - W3Schools, "HTML Input Types", https://www.w3schools.com/html/html_form_input_types.asp, acessado em 19/04/2023
 - Castro, E. Hyslop, B. "HTML5 e CSS3 - Guia Prático & Visual", AltaBooks, 2013
+
+---
+
+## Referências Bibliográficas
+
+- W3Schools, "HTML Form Elements", https://www.w3schools.com/html/html_form_elements.asp, acessado em 20/04/2023
