@@ -98,12 +98,6 @@ td {
 
 ---
 
-## Seletores de Atributo
-
-- Selecionam elementos HTML com base em seus atributos, como `href`, `src`, `title`, entre outros. Por exemplo, [href="https://www.google.com"] seleciona todos os links que apontam para o site "https://www.google.com".
-
----
-
 ## Seletores Combinados
 
 - Combinam vários seletores em uma única regra
@@ -149,25 +143,59 @@ td {
 
 ## Seletores
 
-| Seletor           | Exemplo      | Descrição                                                |
-|-------------------|--------------|----------------------------------------------------------|
-| #id               | #nome        | Seleciona o elemento com o `id="nome"`                   |
-| *                 | *            | Seleciona todos os elementos                             |
-| elemento          | p            | Seleciona todos os `<p>` elementos                       |
-| elemento.class    | p.intro      | Seleciona todos `<p>` elementos com<br> `class="intro"`  |
-| elemento,elemento | div,p        | Seleciona todos os `<div>` e `<p>`<br> elementos         |
+| Seletor              | Exemplo      | Descrição                                                |
+|----------------------|--------------|----------------------------------------------------------|
+| #id                  | #nome        | Seleciona o elemento com o `id="nome"`                   |
+| *                    | *            | Seleciona todos os elementos                             |
+| elemento             | p            | Seleciona todos os `<p>` elementos                       |
+| elemento.class       | p.intro      | Seleciona todos `<p>` elementos com<br> `class="intro"`  |
+| elemento1, elemento2 | div,p        | Seleciona todos os `<div>` e `<p>`<br> elementos         |
 
 
 ---
 
 ## Seletores
 
-| Seletor           | Exemplo      | Descrição                                                |
-|-------------------|--------------|----------------------------------------------------------|
-| elemento elemento | div p        | Seleciona todos os `<p>` elementos<br> dentro de `<div>` |
+| Seletor             | Exemplo      | Descrição                                                |
+|---------------------|--------------|----------------------------------------------------------|
+| elemento1 elemento2 | div p        | Seleciona todos os `<p>` elementos<br> dentro de `<div>` |
 
 
 - Mais seletores: https://www.w3schools.com/cssref/css_selectors.php
+
+---
+
+## Formatando Cores com Estilo
+
+- Cor
+  ```css
+  color: <nome-da-cor> ou #RRGGBB;
+  ```
+  - Exemplo:
+  ```css
+  body {
+    color: #0000ff;
+  }
+  ```
+
+---
+
+## Formatando Cores com Estilo
+
+- Cor de fundo
+  ```css
+  background-color: <nome-da-cor> ou #RRGGBB;
+  ```
+
+---
+
+## Formatando Texto com Estilo
+
+- Escolher fonte
+  ```css
+  font-family: "Nome da fonte1", "Nome da fonte2", ...;
+  ```
+
 
 ---
 
