@@ -8,5 +8,7 @@ section {
 }
 
 article {
-    flex: 0 1 calc(25% - 1em);
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
 }
