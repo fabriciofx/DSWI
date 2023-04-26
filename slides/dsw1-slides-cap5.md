@@ -34,6 +34,16 @@ td {
 
 ---
 
+## Vinculando CSS ao HTML
+
+- Adicionar a tag `<link>` com `rel` `stylesheet` e o `href` apontando para o arquivo de estilos
+- Sintaxe:
+  ```css
+  <link rel="stylesheet" href="style.css">
+  ```
+
+---
+
 ## Seletores
 
 - Dizem ao navegador quais elementos HTML devem ser estilizados com as regras de estilo criadas
@@ -184,8 +194,16 @@ td {
 
 - Cor de fundo
   ```css
-  background-color: <nome-da-cor> ou #RRGGBB;
+  body {
+    background-color: <nome-da-cor> ou #RRGGBB;
+  }
   ```
+  - Exemplo:
+    ```css
+    body {
+      background-color: #d7d7d7;
+    }
+    ```
 
 ---
 
@@ -195,46 +213,11 @@ td {
   ```css
   font-family: "Nome da fonte1", "Nome da fonte2", ...;
   ```
+  - Exemplo:
+    ```css
+    font-family: Arial, sans-serif;
+    ```
 
-
----
-
-## Layouts
-
----
-
-## Layout de Fluxo (Flow Layout)
-
-- É o padrão do CSS
-- Os elementos HTML são dispostos um abaixo do outro ou um ao lado do outro, seguindo a ordem em que aparecem no código HTML
-
----
-
-## Layout Flexível (Flexbox Layout)
-
-- Envolve o uso da propriedade CSS `display: flex` para criar um contêiner que pode ser dimensionado e posicionado de maneira flexível
-- Os elementos dentro do contêiner podem ser organizados em uma única linha ou coluna, ou em várias linhas e colunas, dependendo da configuração
-
----
-
-## Layout de Posicionamento (Positioning Layout)
-
-- Envolve o uso das propriedades CSS `position`, `top`, `bottom`, `left` e `right` para posicionar elementos de maneira precisa na página
-- Permite que você coloque elementos em lugares específicos, mesmo que eles não estejam na ordem natural do fluxo
-
----
-
-## Layout de Grade (Grid Layout)
-
-- Envolve o uso da propriedade CSS `display: grid` para criar um grid de células, onde os elementos HTML podem ser colocados em posições específicas
-- Permite criar designs complexos com elementos dispostos em linhas e colunas
-
----
-
-## Layout de Múltiplas Colunas (Multi-column Layout)
-
-- Envolve o uso da propriedade CSS `column-count` para dividir o conteúdo em várias colunas
-- É especialmente útil para conteúdo de texto, como artigos de notícias ou blogs
 
 ---
 
