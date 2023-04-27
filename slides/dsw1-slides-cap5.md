@@ -174,20 +174,20 @@ td {
 
 | Seletor              | Exemplo      | Descrição                                                |
 |----------------------|--------------|----------------------------------------------------------|
-| #id                  | #nome        | Seleciona o elemento com o `id="nome"`                   |
+| #id                  | #nome        | Seleciona o elemento com<br>o `id="nome"`                |
 | *                    | *            | Seleciona todos os elementos                             |
 | elemento             | p            | Seleciona todos os `<p>` elementos                       |
-| elemento.class       | p.intro      | Seleciona todos `<p>` elementos com<br> `class="intro"`  |
-| elemento1, elemento2 | div,p        | Seleciona todos os `<div>` e `<p>`<br> elementos         |
+| elemento.class       | p.intro      | Seleciona todos `<p>` elementos<br> com `class="intro"`  |
 
 
 ---
 
 ## Seletores
 
-| Seletor             | Exemplo      | Descrição                                                |
-|---------------------|--------------|----------------------------------------------------------|
-| elemento1 elemento2 | div p        | Seleciona todos os `<p>` elementos<br> dentro de `<div>` |
+| Seletor              | Exemplo      | Descrição                                                |
+|----------------------|--------------|----------------------------------------------------------|
+| elemento1, elemento2 | div,p        | Seleciona todos os `<div>` e `<p>`<br> elementos         |
+| elemento1 elemento2  | div p        | Seleciona todos os `<p>` elementos<br> dentro de `<div>` |
 
 
 - Mais seletores: https://www.w3schools.com/cssref/css_selectors.php
