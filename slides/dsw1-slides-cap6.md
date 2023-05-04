@@ -24,6 +24,34 @@ td {
 
 ---
 
+## Considerações ao Começar um Layout
+
+- Sempre separe o seu conteúdo (HTML) da apresentação (CSS)
+  - Torna a página mais fácil de manter e dá mais flexibilidade para funcionar em diferentes plataformas ou aparelhos
+  - Faça sua página HTML e vincule com um arquivo CSS externo
+- Teste o seu site em algum navegador (de preferência o Chrome)
+- Se for necessário escrever regras CSS específicas para o IE6 e IE7, use comentários condicionais
+  - https://www.quirksmode.org/css/condcom.html
+
+---
+
+## Considerações ao Começar um Layout
+
+- **Layout Fixo**: usa *pixels* para as larguras. A largura não muda quando vista de celulares, tablets ou quando uma janela do navegador for reduzida
+- **Layout Fluido**: usa *porcentagens* para as larguras, permitindo que a página encolha ou se expanda dependendo das condições de visualização (web design responsivo)
+- **Layout Elástico**: usa *ems* para largura ou qualquer outra propriedade relacionada a tamanho. Assim, a página se dimensiona de acordo com as configurações do tamanho da fonte
+
+---
+
+## Estruturando a Página
+
+- Divida as seções lógicas do seu documento em elementos `article`, `aside`, `nav`, `section`, `header`, `footer`, `main` e `div`
+- Coloque o conteúdo em uma ordem que seria mais útil se o CSS não fosse usado. Exemplo: `<header>`, seguido por `<main>`, seguido por um ou mais `<aside>`, seguido por `<footer>`
+- Use os cabeçalhos `<h1>` e `<h2>` de maneira consistente para identificar e priorizar a informação dentro das seções da sua página
+- Use comentários `<!--` e `-->` se achar necessário
+
+---
+
 ## Layout de Fluxo (Flow Layout)
 
 - É o padrão do CSS
