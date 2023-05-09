@@ -39,7 +39,7 @@ kbd {
 
 ## O que é?
 
-- Ferramenta integrada de inspeção e depuração de páginas web
+- Ferramenta integrada ao navegador Google Chrome para inspeção e depuração de páginas web
 - Possibilita:
   - Escolher o tipo de dispositivo (celular, tablet, etc.)
   - Inspecionar os elementos HTML / estilos CSS
