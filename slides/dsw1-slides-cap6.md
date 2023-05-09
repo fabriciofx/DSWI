@@ -15,112 +15,54 @@ img[alt~="center"] {
 td {
   white-space: nowrap;
 }
+
+kbd {
+  background-color: #fafbfc;
+  border: thin solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 0.2em;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 1em monospace;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
 </style>
 
 <!-- _paginate: false -->
 # **Desenvolvimento de Sistemas para a Web I**
 
-## Capítulo 6 - Propriedades CSS Personalizadas (Variáveis)
+## Capítulo 6 - Chrome DevTools
 
 ---
 
-## Propriedades CSS Personalizadas
+## O que é?
 
-- Também conhecidas como variáveis CSS ou variáveis em cascata
-- São entidades definidas por desenvolvedores que contém valores específicos a serem reutilizados em um documento
-- Utilizadas quando se tem vários valores que se repetem ao longo do documento e que deseja que sejam alterados de uma única vez
-- Vantagens
-  - Código claro (`--cor-de-fundo` é mais semântico que `#b5c3d7`)
-  - Favore a manutenção (só é necessário alterar em um único lugar)
-  - Facilita a criação de temas
-
----
-
-## Propriedades CSS Personalizadas
-
-- Sintaxe da declaração:
-  ```css
-  --nome-da-propriedade: valor;
-  ```
-  1. Dois hífens (`--`)
-  2. Nome da propriedade
-  3. Dois pontos (`:`)
-  4. Valor da propriedade
-  5. Ponto e vírgula (`;`)
+- Ferramenta integrada de inspeção e depuração de páginas web
+- Possibilita:
+  - Escolher o tipo de dispositivo (celular, tablet, etc.)
+  - Inspecionar os elementos HTML / estilos CSS
+  - Alterar o tamanho da tela
+  - Alterar os estilos CSS/elementos HTML da página temporariamente
+  - Depurar código JavaScript, etc.
 
 ---
 
-## Propriedades CSS Personalizadas
+## Como Executar?
 
-- Sintaxe da declaração:
-  - Exemplo:
-    ```css
-    :root {
-      --cor-principal: #ff0000;
-    }
-    ```
+- Botão direito do mouse e escolher "Inspecionar"
+- <kbd>F12</kbd> ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (Windows)
+- <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (macOS)
 
 ---
 
-## Propriedades CSS Personalizadas
+## Tela Principal
 
-- Para poder acessar (ler) o conteúdo de uma propriedade personalizada, utiliza-se a função `var()`
-- Sintaxe do acesso:
-  ```css
-  var(--nome-da-propriedade);
-  ```
-  - Exemplo:
-    ```css
-    color: var(--cor-principal);
-    ```
-
----
-
-## Escopo
-
-- É um contexto delimitante aos quais valores e expressões estão associados
-- É utilizado para definir o grau de ocultação da informação, isto é, a visibilidade e acessibilidade às propriedades em diferentes partes do documento
-- Tipo
-  - Global
-  - Local
-
----
-
-## Escopo Global
-
-- Declara-se dentro da pseudo classe `:root`
-- `:root` corresponde a raiz, é o mesmo que `<html>`, mas possui uma especifidade maior
-- Exemplo:
-  ```css
-  :root {
-    --cor-primaria: red;
-  }
-
-  h1 {
-    color: var(--cor-primaria);
-  }
-  ```
-
----
-
-## Escopo Local
-
-- Declara-se dentro do seletor que vai utilizá-la
-- Exemplo:
-  ```css
-  ul {
-    --cor-do-texto: blue;
-  }
-
-  ul li {
-    color: var(--cor-do-texto);
-  }
-  ```
+![center width:18cm](imagens/chrome-devtools.png)
 
 ---
 
 ## Referências Bibliográficas
 
-- MDN, "Utilizando propriedades CSS personalizadas (variáveis)", https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties, acessado em 08/05/2023
-- Alura, "Construa um CSS mágico com variáveis nativas", https://www.alura.com.br/artigos/construa-css-magico-variaveis-nativas, acessado em 08/05/2023
-- Wikipedia, "Escopo (computação)", https://pt.wikipedia.org/wiki/Escopo_(computa%C3%A7%C3%A3o), acessado em 08/05/2023
+- Chrome DevTools, "Chrome DevTools", https://developer.chrome.com/docs/devtools/, acessado em 08/05/2023
