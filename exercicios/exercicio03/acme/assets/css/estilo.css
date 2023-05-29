@@ -16,22 +16,37 @@ header {
     background-color: blueviolet;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
 nav a {
     text-decoration: none;
-    margin: 1%;
-    padding-left: 10px;
-    padding-right: 10px;
     color: white;
     background-color: green;
     border-radius: 5px;
+    padding: 10px;
 }
 
 footer {
     background-color: chocolate;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .texto_justificado {
     text-align: justify;
     text-indent: 5%;
+}
+
+article {
+    border: 1px solid black;
+}
+
+.produtos {
+    display: flex;
 }
