@@ -9,11 +9,12 @@
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    background-color: coral;
+    background-color: #ffffff;
 }
 
 header {
     background-color: blueviolet;
+    padding: 1%;
 }
 
 nav {
@@ -32,10 +33,11 @@ nav a {
 }
 
 footer {
-    background-color: chocolate;
+    background-color: blueviolet;
     color: white;
     display: flex;
     justify-content: center;
+    
 }
 
 .texto_justificado {
@@ -44,9 +46,14 @@ footer {
 }
 
 article {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
 }
 
 .produtos {
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /*justify-content: center;*/
 }
