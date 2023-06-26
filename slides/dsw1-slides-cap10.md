@@ -4,7 +4,7 @@ theme: gaia
 backgroundColor: white
 color: black
 paginate: true
-footer: Introdução à Programação - Fabrício Barros Cabral <<fabricio.cabral@ead.ifpe.edu.br>>
+footer: Desenvolvimento de Sistemas para a Web I - Fabrício Barros Cabral <<fabricio.cabral@ead.ifpe.edu.br>>
 ---
 <style>
 img[alt~="center"] {
