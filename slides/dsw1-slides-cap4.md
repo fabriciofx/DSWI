@@ -49,8 +49,13 @@ img[alt~="center"] {
 ## Método GET ou POST?
 
 - `GET` é usado quando o cliente deseja obter recursos do servidor; `POST` é usado quando o cliente deseja enviar dados para processamento no servidor
-  - Passe algum dado via `GET` para ajudar a obter algum recurso, como o id de algum produto
-- `GET` passa os dados codificados no cabeçalho da requisição (URL); `POST` passa no corpo da requisição
+  - Passe algum dado (como o id de algum produto) via `GET` para ajudar a obter algum recurso (a página do produto)
+- `GET` passa os dados codificados no cabeçalho da requisição (URL) em *plaintext* (inseguro); `POST` passa no corpo da requisição (seguro)
+
+---
+
+## Método GET ou POST?
+
 - `GET` possui limite do envio de caracteres que variam de acordo com o cliente/servidor (pode ser de 255 bytes até 2.000 caracteres); `POST` não há esse limite
 
 ---
@@ -85,7 +90,7 @@ img[alt~="center"] {
         <input type="text" id="nome" name="nome"><br>
     </form>
     ```
-  - Atributos: `required="required"`, `placeholder="mensagem"`, `value="valor-padrão"`, `autofocus="autofocus"`, `size="n"`, `maxlength="n"`
+  - Alguns atributos: `required="required"`, `placeholder="mensagem"`, `value="valor-padrão"`, `autofocus="autofocus"`, `size="n"`, `maxlength="n"`, `pattern="regex"`
 
 ---
 
